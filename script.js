@@ -28,7 +28,7 @@ function HomeNavUi(data) {
   let homeNav = document.querySelector("#home-nav");
   homeNav.innerHTML = `
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-  <div class="p-3 rounded-lg bg-gray-900 text-white transform transition duration-300 hover:scale-105">
+  <div class="p-3 mb-2 rounded-lg bg-gray-900 text-white transform transition duration-300 hover:scale-105">
       <p class="text-sm font-semibold">IP Address: <span class="text-sm text-gray-300">${data.ip}</span></p>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
