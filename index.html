@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Offcies</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/128/2205/2205166.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+  <body class="scrollbar">
+    <section id="front-page" class="flex flex-col md:flex-row w-full h-screen">
+      <div
+        id="title"
+        class="h-full md:w-1/2 bg-black text-white font-montserrat flex flex-col justify-between md:justify-normal"
+      >
+        <div class="p-4">
+          <h1 class="font-bold text-xl text-[#575A85]">
+            Post Office Application.
+          </h1>
+          <p class="text-[#B8BCCC] text-base font-inter mt-2">
+            This Application Allows you to extract information about the nearest
+            Post Offices, based on your location.
+          </p>
+        </div>
+        <div class="flex justify-center items-end md:items-center h-max">
+          <img
+            src="./assets/frontpage.svg"
+            alt="front page"
+            class="opacity-45 scale-90 md:scale-75 md:opacity-100"
+          />
+        </div>
+      </div>
+      <div
+        id="front-start"
+        class="w-full md:w-1/2 md:bg-[#575A85] h-screen font-inter flex items-center justify-center absolute md:relative z-10"
+      >
+        <div class="text-center">
+          <p class="text-xl text-[#B8BCCC] font-bold mb-4">
+            Your Current IP Address is
+            <span id="user-ip" class="text-white"></span>
+          </p>
+          <input
+            type="submit"
+            value="Get Started"
+            id="get-started"
+            class="px-8 lg:px-12 py-3 border border-[#B8BCCC] text-[#B8BCCC] rounded-md font-normal cursor-pointer"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="home-page" class="w-full h-screen hidden">
+      <nav
+        id="home-nav"
+        class="w-full bg-gradient-to-r from-gray-800 to-gray-950 text-white py-6"
+      ></nav>
+      <main>
+        <div
+          id="map"
+          class="w-full bg-[#575A85] sm:p-6 flex flex-col justify-center items-center"
+        ></div>
+        <div
+          id="more-info"
+          class="w-full bg-gradient-to-r from-gray-800 to-gray-950 text-white py-6"
+        ></div>
+        <div
+          id="near-post"
+          class="w-full bg-gradient-to-r from-gray-800 to-gray-950 text-white py-6"
+        ></div>
+      </main>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
